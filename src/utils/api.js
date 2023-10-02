@@ -1,7 +1,7 @@
 
 
 export const fetchProducts = async () => {
-  try {
+  // try {
     let data = await fetch("https://fakestoreapi.com/products")
     .then(data => data.json())
     .then(data => {
@@ -9,7 +9,7 @@ export const fetchProducts = async () => {
     });
 
     return data;
-  } catch (error) {
-    console.log("error while fetching data from API: ", error)
-  }
+  // } catch (error) {
+  //   console.log("error while fetching data from API: ", error)
+  // }
 }
